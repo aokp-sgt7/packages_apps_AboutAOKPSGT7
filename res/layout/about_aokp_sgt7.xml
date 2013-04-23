@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutAOKPSGT7" >
+
+    <RelativeLayout
+        android:id="@+id/header_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="10dp" >
+
+        <ImageButton
+            android:id="@+id/aokp_sgt7_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="#00000000"
+            android:onClick="sgt7Website"
+            android:src="@drawable/aokp_sgt7_logo" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:transcriptMode="disabled" >
+
+            <ImageButton
+                android:id="@+id/aokp_sgt7_facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:onClick="sgt7Facebook"
+                android:src="@drawable/about_sgt7_facebook" />
+
+            <ImageButton
+                android:id="@+id/aokp_sgt7_twitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:onClick="sgt7Twitter"
+                android:src="@drawable/about_sgt7_twitter" />
+
+            <ImageButton
+                android:id="@+id/aokp_sgt7_googleplus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:onClick="sgt7GPlus"
+                android:src="@drawable/about_sgt7_googleplus" />
+
+            <ImageButton
+                android:id="@+id/aokp_sgt7_github"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:onClick="sgt7GitHub"
+                android:src="@drawable/about_sgt7_github" />
+
+            <ImageButton
+                android:id="@+id/aokp_sgt7_xda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:onClick="sgt7XDA"
+                android:src="@drawable/about_sgt7_xda" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/aokp_sgt7_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@+id/linearLayout1"
+            android:layout_below="@+id/linearLayout1"
+            android:text="@string/aokp_sgt7_title"
+            android:paddingTop="10dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/aokp_sgt7_build_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@+id/linearLayout1"
+            android:gravity="right"
+            android:text="@string/aokp_sgt7_details"
+            android:layout_below="@+id/aokp_sgt7_title"
+            android:paddingTop="10dp" />
+
+    </RelativeLayout>
+
+    <ExpandableListView
+        android:id="@+id/expandableListView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/header_view" >
+    </ExpandableListView>
+    
+</RelativeLayout>

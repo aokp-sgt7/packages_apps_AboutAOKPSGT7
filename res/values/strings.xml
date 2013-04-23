@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">About AOKP SGT7</string>
+
+    <string name="aokp_sgt7_title">[[ :: AOKP SGT7 :: ]]</string>
+    <string name="aokp_sgt7_details">developed by :: stimpz0r\n\npress the logo and buttons above for web links</string>
+    
+	<string name="about_aokp_sgt7_url_website">http://aokp.sgt7.net</string>
+	<string name="about_aokp_sgt7_url_facebook">http://www.facebook.com/aokpsgt7</string>
+	<string name="about_aokp_sgt7_url_twitter">http://twitter.com/aokpsgt7</string>
+	<string name="about_aokp_sgt7_url_googleplus">http://plus.google.com/110822374066685916114</string>
+	<string name="about_aokp_sgt7_url_github">http://github.com/aokp-sgt7</string>
+	<string name="about_aokp_sgt7_url_xda">http://forum.xda-developers.com/showthread.php?t=1923758</string>
+    
+	<string name="about_aokp_sgt7_about_title">About AOKP SGT7</string>
+	<string name="about_aokp_sgt7_about_content">AOKP SGT7 was born due the fact there was no AOKP for the Samsung Galaxy Tab 7inch GSM variants.
+after getting it to compile with the SGT7 TE4M\'s device / vendor &#38; kernel code, there was finally an unofficial release for the GSM
+variants.\n\n
+AOKP SGT7 now is also available for the CDMA variants - as TeamKang (and KhasMek) decided not to release any more builds for the CDMA
+variants, i decided it was only fair for the CDMA users to give them the ability to keep using updated AOKP builds on their devices too, but
+also give them all the benefits of running the AOKP SGT7 builds.\n\n
+AOKP SGT7 has since release become one of the most popular builds for SGT7 devices, has branched out on to the 3 major social networking
+sites (press the links above to see the respective profiles / pages for AOKP SGT7), and has it\'s own website with downloads, releases, bug
+tracker, FAQ and more.</string>
+	      
+	<string name="about_aokp_sgt7_features_title">AOKP SGT7 Features (that you won\'t find in AOKP)</string>
+	<string name="about_aokp_sgt7_features_content">the main features of AOKP SGT7 are as follows:\n\n
+- all builds are generally 1-2 days off the latest AOKP code before release\n
+- device &#38; vendor files from CM / SGT7 TE4M member cdesai (modified for use on AOKP SGT7)\n
+- HumberOS / SGT7 TE4M\'s kernel with overclocking / kernel tweaks, and a few extra governors thrown in\n
+- fixes &#38; improvements for 7 inch tablets (by myself &#38; sbradymobile from the SGT7 TE4M)\n
+- extra features not included in standard AOKP releases - generally ported from SGT7 TE4M builds\n
+- AOKP SGT7 exclusive wallpapers\n
+- apps from CyanogenMod builds to give the rom a \"complete out-of-the-box\" feel.\n\n
+and finally - a list of features / improvements (most originally by sbradymobile - ported to AOKP by myself):\n\n
+- FEATURE: Flipped Tablet system bar (with flipped NavRing)\n
+- FEATURE: UMS start on notification click (skips over the UMS activation screen)\n
+- FEATURE: Large Recent thumbnails for Tablets\n
+- FEATURE: Center Clock for TabletUI - Center Clock now moves the clock after the status icons, Right clock pushes the clock to the edge\n
+- FEATURE: disable Auto Brightness for devices that don\'t have that feature\n
+- FEATURE: Kernel Tweaks - GPU Overclock &#38; Touchscreen Clock control\n
+- FIXED: NavRing layout fixed for 7inch tablets\n
+- FIXED: TabletUI USB storage notification\n
+- FIXED: Tablet Clock / Center Clock layout - Center Clock caused problems with USB notifications in TabletUI\n
+- FIXED: Legacy USB fixes (proper ADB and USB Tethering)\n
+- FIXED: Voltage Control fixed for devices without usual voltage control files</string>
+	    
+	<string name="about_aokp_sgt7_credits_title">Credits</string>
+	<string name="about_aokp_sgt7_credits_content">AOKP SGT7 :: by stimpz0r\n\n
+GSM testers ::\n\n
+- priyana\n
+- salahmed\n
+- yosup\n\n
+CDMA testers ::\n\n
+- dodgem2012\n
+- RockRatt\n\n
+also thanks to the following for helping this build get to where it is today, and contributing in their own ways:\n\n
+yappoe - SGTABHI - mao_red\n\n
+TeamKang - the creators of AOKP, without their hard work this build would never exist, and the reason you are using this build on your
+tablets (see the About screen for a list of people behind it and further information on TeamKang).\n\n
+CyanogenMod - the pioneers in android roms, and the team behind many of the supplementary apps included with AOKP SGT7, without CM the
+android modding community would probably never be the same.\n\n
+SGT7 TE4M - this build would not exist without the SGT7 TE4M\'s awesome work! they have done amazing work getting ICS and JB working
+properly on our SGT7, and the SGT7 would never be the same without them, so for that thanks to the following:\n\n
+cdesai - HumberOS - sbradymobile - jt1134 - eaut - red_rebel - angel_666 - koxudaxi - Technomancer</string>
+</resources>
