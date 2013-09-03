@@ -1,109 +1,227 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:category="http://schemas.android.com/apk/res/com.aokp.sgt7.about"
+    android:id="@+id/content_area"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".AboutAOKPSGT7" >
+    android:layout_height="match_parent" >
 
-    <RelativeLayout
-        android:id="@+id/header_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:padding="10dp" >
+	<com.aokp.sgt7.about.ObservableScrollView
+    	android:id="@+id/scroll_view"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" >
 
-        <ImageButton
-            android:id="@+id/aokp_sgt7_logo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:background="#00000000"
-            android:onClick="sgt7Website"
-            android:src="@drawable/aokp_sgt7_logo" />
+	    <LinearLayout
+	        xmlns:android="http://schemas.android.com/apk/res/android"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
 
-        <LinearLayout
-            android:id="@+id/linearLayout1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
-            android:gravity="right"
-            android:orientation="horizontal"
-            android:transcriptMode="disabled" >
+	        <RelativeLayout
+	            android:id="@+id/header_view"
+				android:layout_width="match_parent"
+	            android:layout_height="@dimen/header_height"
+	            android:layout_gravity="fill_horizontal|center"
+	            android:background="@drawable/header_background" >
 
-            <ImageButton
-                android:id="@+id/aokp_sgt7_facebook"
-                android:layout_width="wrap_content"
+        	    <ImageView
+        	        android:id="@+id/header_image"
+        	        android:layout_width="wrap_content"
+        	        android:layout_height="wrap_content"
+           	   		android:layout_alignParentTop="true"
+		            android:layout_centerHorizontal="true"
+                	android:src="@drawable/header_about" />
+
+            	<View android:id="@+id/placeholder"
+            	    android:layout_width="match_parent"
+            	    android:layout_height="@dimen/title_bar_height"
+        	        android:layout_alignParentBottom="true" />
+        	    
+            </RelativeLayout>
+	    
+
+            <LinearLayout
+                android:id="@+id/aokp_sgt7_links"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#00000000"
-                android:onClick="sgt7Facebook"
-                android:src="@drawable/about_sgt7_facebook" />
+                android:gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:transcriptMode="disabled" >
 
-            <ImageButton
-                android:id="@+id/aokp_sgt7_twitter"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#00000000"
-                android:onClick="sgt7Twitter"
-                android:src="@drawable/about_sgt7_twitter" />
+                <ImageButton
+                    android:id="@+id/aokp_sgt7_website"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:onClick="sgt7Website"
+                    android:src="@drawable/about_sgt7_website" />
 
-            <ImageButton
-                android:id="@+id/aokp_sgt7_googleplus"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#00000000"
-                android:onClick="sgt7GPlus"
-                android:src="@drawable/about_sgt7_googleplus" />
+                <ImageButton
+                    android:id="@+id/aokp_sgt7_xda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:onClick="sgt7XDA"
+                    android:src="@drawable/about_sgt7_xda" />
 
-            <ImageButton
-                android:id="@+id/aokp_sgt7_github"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#00000000"
-                android:onClick="sgt7GitHub"
-                android:src="@drawable/about_sgt7_github" />
+                <ImageButton
+                    android:id="@+id/aokp_sgt7_facebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:onClick="sgt7Facebook"
+                    android:src="@drawable/about_sgt7_facebook" />
 
-            <ImageButton
-                android:id="@+id/aokp_sgt7_xda"
-                android:layout_width="wrap_content"
+                <ImageButton
+                    android:id="@+id/aokp_sgt7_twitter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:onClick="sgt7Twitter"
+                    android:src="@drawable/about_sgt7_twitter" />
+
+                <ImageButton
+                    android:id="@+id/aokp_sgt7_googleplus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:onClick="sgt7GPlus"
+                    android:src="@drawable/about_sgt7_googleplus" />
+
+                <ImageButton
+                    android:id="@+id/aokp_sgt7_github"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:onClick="sgt7GitHub"
+                    android:src="@drawable/about_sgt7_github" />
+
+                <ImageButton
+                    android:id="@+id/aokp_sgt7_goo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:onClick="sgt7Goo"
+                    android:src="@drawable/about_sgt7_goo" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/aokp_sgt7_links_info"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#00000000"
-                android:onClick="sgt7XDA"
-                android:src="@drawable/about_sgt7_xda" />
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="40dp"
+                android:transcriptMode="disabled" >
+
+                <TextView
+                    android:id="@+id/aokp_sgt7_links_info_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:text="@string/about_aokp_sgt7_url_details"
+                    android:textAppearance="@android:style/TextAppearance.Small" />
+
+            </LinearLayout>
+
+            <com.aokp.sgt7.about.CategoryView
+                android:id="@+id/about_aokp_sgt7_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                category:catTitle="@string/about_aokp_sgt7_about_title"
+                category:catSummary="@string/about_aokp_sgt7_about_summary"
+                category:isExpanded="true" >
+        
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about_aokp_sgt7_about_content"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@android:color/white" />
+
+            </com.aokp.sgt7.about.CategoryView>
+        
+            <com.aokp.sgt7.about.CategoryView
+                android:id="@+id/about_aokp_sgt7_features"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                category:catTitle="@string/about_aokp_sgt7_features_title"
+                category:catSummary="@string/about_aokp_sgt7_features_summary"
+                category:isExpanded="false" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about_aokp_sgt7_features_content"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@android:color/white" />
+
+            </com.aokp.sgt7.about.CategoryView>
+        
+            <com.aokp.sgt7.about.CategoryView
+                android:id="@+id/about_aokp_sgt7_credits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                category:catTitle="@string/about_aokp_sgt7_credits_title"
+                category:catSummary="@string/about_aokp_sgt7_credits_summary"
+                category:isExpanded="false" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about_aokp_sgt7_credits_content"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@android:color/white" />
+
+            </com.aokp.sgt7.about.CategoryView>
+        
         </LinearLayout>
+        
+	</com.aokp.sgt7.about.ObservableScrollView>
 
-        <TextView
-            android:id="@+id/aokp_sgt7_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_alignRight="@+id/linearLayout1"
-            android:layout_below="@+id/linearLayout1"
-            android:text="@string/aokp_sgt7_title"
-            android:paddingTop="10dp"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
+	<RelativeLayout
+		android:id="@+id/title_bar"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/title_bar_height"
+		android:paddingTop="10dp"
+		android:paddingBottom="10dp"
+		android:background="@drawable/titlebar_background"
+		android:orientation="vertical" >
 
-        <TextView
-            android:id="@+id/aokp_sgt7_build_info"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_alignRight="@+id/linearLayout1"
-            android:gravity="right"
-            android:text="@string/aokp_sgt7_details"
-            android:layout_below="@+id/aokp_sgt7_title"
-            android:paddingTop="10dp" />
+		<ImageView
+			android:id="@+id/header_icon"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentTop="true"
+			android:src="@drawable/ic_launcher" />
 
-    </RelativeLayout>
+		<TextView
+			android:id="@+id/header_title"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="10dp"
+			android:layout_marginTop="5dp"
+			android:layout_toLeftOf="@+id/header_icon"
+			android:gravity="top|right"
+			android:text="@string/aokp_sgt7_title"
+			android:textAppearance="@android:style/TextAppearance.Medium"
+			android:textColor="@android:color/white" />
 
-    <ExpandableListView
-        android:id="@+id/expandableListView1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/header_view" >
-    </ExpandableListView>
-    
-</RelativeLayout>
+		<TextView
+			android:id="@+id/header_summary"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_below="@+id/header_title"
+			android:layout_marginRight="10dp"
+			android:layout_toLeftOf="@+id/header_icon"
+			android:gravity="bottom|right"
+			android:text="@string/aokp_sgt7_details"
+			android:textAppearance="@android:style/TextAppearance.Small"
+			android:textColor="@android:color/white" />
+	</RelativeLayout>
+
+</FrameLayout>

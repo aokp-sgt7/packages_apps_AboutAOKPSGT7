@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- CategoryView -->
+    <declare-styleable name="catOptions">
+        <attr name="catTitle" format="string" localization="suggested" />
+        <attr name="catSummary" format="string" localization="suggested" />
+        <attr name="isExpanded" format="boolean" />
+    </declare-styleable>
+    
+</resources>
